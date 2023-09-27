@@ -10,19 +10,22 @@ import Contacts from "../pages/Contacts";
 import NotFound from "../pages/NotFound";
 import Menu from "../pages/Menu";
 import Place from "../pages/Place";
+import { Main } from "./Routes";
 
 export default function AppRouter() {
   return (
     <Router>
       <Header />
+      <Main>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/place" element={<Place />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/casa" element={<Place />} />
+        <Route path="/cardapio" element={<Menu />} />
+        <Route path="/sobre" element={<AboutUs />} />
+        <Route path="/contato" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </Main>
       <Footer />
     </Router>
   );
