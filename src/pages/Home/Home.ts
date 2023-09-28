@@ -32,3 +32,4 @@ export const Location = styled.div`
   font-weight: bold;
   color: #ff5722;
 `;
+

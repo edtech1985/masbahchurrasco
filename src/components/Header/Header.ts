@@ -178,3 +178,24 @@ export const DeliveryButton = styled.button`
     background-color: var(--red);
   }
 `;
+
+// SOCIAL MEDIA ICONS //
+
+export const StyledSocialIcons = styled.div`
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 600px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 20vh;
+    height: 20vh;
+  }
+`;

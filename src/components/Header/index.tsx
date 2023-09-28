@@ -1,6 +1,7 @@
 import React from "react";
-import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, Menu, MenuItem, NavBar, NavbarTitle } from "./Header";
+import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, Menu, MenuItem, NavBar, NavbarTitle, StyledSocialIcons } from "./Header";
 import { Link } from "react-router-dom";
+import { FacebookIcon } from "../SocialIcons";
 
 export default function Header() {
 
@@ -41,7 +42,14 @@ export default function Header() {
           </Menu>
         </NavBar>
         <DeliveryButton>Delivery Button</DeliveryButton>
-        <div>Social Links</div>
+        <StyledSocialIcons>
+
+          <FacebookIcon />
+          <FacebookIcon />
+          <FacebookIcon />
+          <FacebookIcon />
+
+        </StyledSocialIcons>
       </HeaderContainer>
     </>
 
