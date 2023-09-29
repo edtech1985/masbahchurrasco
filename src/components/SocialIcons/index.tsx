@@ -22,8 +22,9 @@ export const FacebookIcon = () => {
   )
 }
 
-export const SocialIcons = () => {
+export const InstagramIcon = () => {
   return (
+    
       <StyledIconList>
         <StyledIconItem>
           <a
@@ -35,17 +36,14 @@ export const SocialIcons = () => {
             <FaInstagram />
           </a>
         </StyledIconItem>
-        <StyledIconItem>
-          <a
-            href="https://www.facebook.com//masbahchurrasco/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Facebook MasBah! Churrasco Campeche"
-          >
-            <FaFacebook />
-          </a>
-        </StyledIconItem>
+      </StyledIconList>
+  )
+}
 
+export const WhatsappIcon = () => {
+  return (
+    
+      <StyledIconList>
         <StyledIconItem>
           <a
             href="https://api.whatsapp.com/send?phone=5548991338844&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%E2%80%A6"
@@ -56,6 +54,14 @@ export const SocialIcons = () => {
             <FaWhatsapp />
           </a>
         </StyledIconItem>
+      </StyledIconList>
+  )
+}
+
+export const WhatsappIcon2 = () => {
+  return (
+    
+      <StyledIconList>
         <StyledIconItem>
           <a
             href="https://api.whatsapp.com/send?phone=5548998333303&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%E2%80%A6"

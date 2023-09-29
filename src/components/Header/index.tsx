@@ -1,7 +1,7 @@
 import React from "react";
 import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, Menu, MenuItem, NavBar, NavbarTitle, StyledSocialIcons } from "./Header";
 import { Link } from "react-router-dom";
-import { FacebookIcon } from "../SocialIcons";
+import { FacebookIcon, InstagramIcon, WhatsappIcon, WhatsappIcon2 } from "../SocialIcons";
 
 export default function Header() {
 
@@ -45,9 +45,9 @@ export default function Header() {
         <StyledSocialIcons>
 
           <FacebookIcon />
-          <FacebookIcon />
-          <FacebookIcon />
-          <FacebookIcon />
+          <InstagramIcon />
+          <WhatsappIcon />
+          <WhatsappIcon2 />
 
         </StyledSocialIcons>
       </HeaderContainer>
