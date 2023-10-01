@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -7,8 +8,7 @@ export const HeaderContainer = styled.header`
   padding: 2vw;
   background-color: var(--dark);
   width: 100vw;
-  max-height: 12vh;
-  height: 12vh;
+  max-height: 15vh;
   box-sizing: border-box;
   position: relative;
   border-bottom: 1px solid var(--red);
@@ -17,6 +17,17 @@ export const HeaderContainer = styled.header`
   a {
     text-decoration: none;
   }
+  
+  @media only screen and (max-width: 480px) {
+
+    justify-content: left;
+  }
+`;
+
+export const LogoTitleDiv = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 50vw;
 `;
 
 export const Logo = styled.img`
@@ -32,12 +43,13 @@ export const Logo = styled.img`
 `;
 
 export const NavbarTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--red);
+  align-items: center; //centraliza verticalmente
   display: flex;
-  align-items: center;
   cursor: pointer;
-  position: relative;
+  padding-left: 1vw;
+  white-space: nowrap;
 
   &:hover {
     text-shadow: -8px 8px 8px rgba(255, 0, 0, 0.75);
@@ -45,39 +57,21 @@ export const NavbarTitle = styled.h2`
     transition: background-position 1s ease-in-out, color 1s ease-in-out;
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 992px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  @media only screen and (min-width: 681px) and (max-width: 992px) {
+    
+  white-space: break-spaces;
+}
 
-  @media only screen and (min-width: 401px) and (max-width: 600px) {
-    font-size: 1.75rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media only screen and (min-width: 340px) and (max-width: 420px) {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  @media only screen and (max-width: 340px) {
-    font-size: 1.25rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@media only screen and (max-width: 680px) {
+  display: none;
   }
 `;
 
-export const BurgerMenuButton = styled.button`
+interface BurgerMenuButtonProps {
+  open: boolean;
+}
+
+export const BurgerMenuButton = styled.button<BurgerMenuButtonProps>`
   display: none;
 
   @media screen and (max-width: 992px) {
@@ -98,7 +92,7 @@ export const BurgerMenuButton = styled.button`
       height: 0.25rem;
       margin-bottom: 0.75rem;
       position: relative;
-      background-color: var(--light-red);
+      background-color: var(--red);
       border-radius: 15px;
       transform-origin: center;
       transition: transform 1.25s ease-out, opacity 1.25s ease-out;
@@ -106,21 +100,50 @@ export const BurgerMenuButton = styled.button`
       &:focus {
         outline: none;
       }
+      &:first-child {
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      }
+
+      &:nth-child(2) {
+        opacity: ${({ open }) => (open ? "0" : "1")};
+      }
+
+      &:nth-child(3) {
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      }
     }
   }
 `;
 
-export const NavBar = styled.nav`
+interface BurgerMenuProps {
+  open: boolean;
+}
+
+export const NavBar = styled.nav<BurgerMenuProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 992px) {
+    display: ${({ open }) => (open ? "flex" : "none")};
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: flex;
+    background-color: var(--orange); //fundo bruger menu down
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+  }
 `;
 
 export const Menu = styled.ul`
   display: flex;
   list-style: none;
+
+  @media only screen and (max-width: 992px) {
+  flex-direction: column;
+  }
 `;
 
 export const MenuItem = styled.li`
@@ -130,9 +153,10 @@ export const MenuItem = styled.li`
   text-decoration: none;
   font-size: 1.25rem;
   position: relative;
+  white-space: nowrap;
 
   &:hover {
-    color: var(--dark-red);
+    color: var(--red);
   }
 
   &::after {
@@ -142,7 +166,7 @@ export const MenuItem = styled.li`
     height: 2px;
     bottom: -1px;
     left: 12%;
-    background-color: var(--light-red);
+    background-color: var(--red);
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     transform: scaleX(0);
@@ -156,8 +180,26 @@ export const MenuItem = styled.li`
   }
 
   &.active {
-    color: var(--light-red);
+    color: var(--red);
   }
+
+  @media only screen and (max-width: 992px) {
+    display: flex;
+  }
+  ;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+`;
+
+export const StyledNavItem = styled(Link)`
+  display: block;
+  padding: 1vw;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  position: relative;
 
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
@@ -174,28 +216,30 @@ export const DeliveryButton = styled.button`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
     background-color: var(--red);
   }
-`;
 
-// SOCIAL MEDIA ICONS //
+  @media only screen and (max-width: 480px) {
+    margin-right: 30%;
+  }
+`;
 
 export const StyledSocialIcons = styled.div`
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   padding: 1vw;
+  gap: 1vw;
   width: 100%;
   box-sizing: border-box;
+  
+  @media only screen and (max-width: 992px) {
+    padding-right: 10vw;
+    gap: 0.25vw;
+  }
 
-  @media only screen and (max-width: 600px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: center;
-    flex-direction: column;
-    max-height: 20vh;
-    height: 20vh;
+  @media only screen and (max-width: 480px) {
+    display: none;
   }
 `;

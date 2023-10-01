@@ -18,7 +18,6 @@ export const StyledIconList = styled.ul`
 export const StyledIconItem = styled.li`
   min-height: 48px;
   min-width: 48px;
-  margin-left: 1vw;
   list-style-type: none;
   font-size: 1.75rem;
   color: var(--red);

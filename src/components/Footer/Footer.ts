@@ -10,9 +10,8 @@ export const StyledFooter = styled.footer`
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
-  max-height: 12vh;
+  max-height: 20vh;
   border-top: 1px solid var(--red);
-  box-shadow: 0px 0px 5px rgba(191, 156, 90, 0.5);
 
   @media only screen and (max-width: 600px) {
     padding-top: 2rem;
@@ -20,7 +19,7 @@ export const StyledFooter = styled.footer`
     justify-content: center;
     flex-direction: column;
     max-height: 20vh;
-    height: 20vh;
+    height: auto;
   }
 `;
 
@@ -55,6 +54,7 @@ export const StyledIconItem = styled.li`
   @media only screen and (max-width: 600px) {
     font-size: 2rem;
     justify-content: center;
+    margin-left: 0;
   }
 `;
 

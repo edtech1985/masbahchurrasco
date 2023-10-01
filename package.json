@@ -11,6 +11,7 @@
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-menu-burger": "^1.0.0",

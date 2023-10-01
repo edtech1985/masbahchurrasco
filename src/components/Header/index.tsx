@@ -1,11 +1,12 @@
-import React from "react";
-import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, Menu, MenuItem, NavBar, NavbarTitle, StyledSocialIcons } from "./Header";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, LogoTitleDiv, Menu, MenuItem, NavBar, NavbarTitle, StyledNavItem, StyledSocialIcons } from "./Header";
+import { Link, NavLink } from "react-router-dom";
 import { FacebookIcon, InstagramIcon, WhatsappIcon, WhatsappIcon2 } from "../SocialIcons";
+import LogoImg from '../../assets/dishes/masbah (1).jpg'
 
 export default function Header() {
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
@@ -18,39 +19,65 @@ export default function Header() {
   return (
     <>
       <HeaderContainer>
-        <Link to="/">
-          <Logo src="https://img.freepik.com/vetores-premium/logotipo-de-churrasqueira-para-churrasco-com-modelo-de-design-de-icone-de-espatula-e-fogo_568621-40.jpg?w=2000" alt="Logo" />
-        </Link>
-        <NavbarTitle>Mas Bah Churrasco</NavbarTitle>
 
+        <LogoTitleDiv>
+          <Link to="/">
+            <Logo src={LogoImg} alt="Logo" />
+          </Link>
+          <NavbarTitle>MasBah! Churrasco</NavbarTitle>
+        </LogoTitleDiv>
+
+        <NavBar open={isOpen}>
+          <Menu>
+            <StyledNavItem
+              to="/"
+              aria-label="Página Inicial"
+              onClick={handleNavClick} >
+              <MenuItem>Home</MenuItem>
+            </StyledNavItem>
+            <StyledNavItem
+              to="/casa"
+              aria-label="Sobre A Casa"
+              onClick={handleNavClick}>
+              <MenuItem>A Casa</MenuItem>
+            </StyledNavItem>
+            <StyledNavItem
+              to="/cardapio"
+              aria-label="Cardápio"
+              onClick={handleNavClick}>
+              <MenuItem>Cardápio</MenuItem>
+            </StyledNavItem>
+            <StyledNavItem
+              to="/contato"
+              aria-label="Contato"
+              onClick={handleNavClick}>
+              <MenuItem>Contato</MenuItem>
+            </StyledNavItem>
+          </Menu>
+        </NavBar>
+        
+          <DeliveryButton>Delivery</DeliveryButton>
+
+        <StyledSocialIcons>
+          <FacebookIcon />
+          <InstagramIcon />
+          <WhatsappIcon />
+          <WhatsappIcon2 />
+        </StyledSocialIcons>
+
+        
         <BurgerMenuButton
           id="BurgerButtonMenu"
-          aria-expanded={isOpen ? "true" : "false"}
+          open={isOpen}
           onClick={handleMenuClick}
+          aria-label="Menu"
         >
           <span></span>
           <span></span>
           <span></span>
         </BurgerMenuButton>
 
-        <NavBar>
-          <Menu>
-            <Link to="/" aria-label="Página Inicial"  ><MenuItem  >Home</MenuItem></Link>
-            <Link to="/casa"><MenuItem>A Casa</MenuItem></Link>
-            <Link to="/cardapio"><MenuItem>Cardápio</MenuItem></Link>
-            <Link to="/contato"><MenuItem>Contato</MenuItem></Link>
-          </Menu>
-        </NavBar>
-        <DeliveryButton>Delivery Button</DeliveryButton>
-        <StyledSocialIcons>
-
-          <FacebookIcon />
-          <InstagramIcon />
-          <WhatsappIcon />
-          <WhatsappIcon2 />
-
-        </StyledSocialIcons>
-      </HeaderContainer>
+      </HeaderContainer >
     </>
 
   )
