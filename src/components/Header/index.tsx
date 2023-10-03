@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { BurgerMenuButton, DeliveryButton, HeaderContainer, Logo, LogoTitleDiv, Menu, MenuItem, NavBar, NavbarTitle, StyledNavItem, StyledSocialIcons } from "./Header";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FacebookIcon, InstagramIcon, WhatsappIcon, WhatsappIcon2 } from "../SocialIcons";
-import LogoImg from '../../assets/dishes/masbah (1).jpg'
+import LogoImg from '../../assets/logo.jpg'
 
 export default function Header() {
 
