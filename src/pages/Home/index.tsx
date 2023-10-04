@@ -4,10 +4,12 @@ import Carousel from "../../components/Carousel";
 export default function Home() {
   return (
     <Container>
+      
       <AddressDiv>
       <AddressSubDiv>Rua Sabino Anisio da Silveira, 116 - Campeche </AddressSubDiv> 
       <AddressSubDiv>Rua Cap. Romualdo de Barros, 933 - Carvoeira</AddressSubDiv>
       </AddressDiv>
+
       <Carousel />
       <MainDiv>
         <Title>MasBah! Churrasco: A Arte do Churrasco sobre Rodas</Title>

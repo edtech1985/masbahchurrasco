@@ -18,15 +18,15 @@ export const AddressDiv = styled.div`
   background-color: #2c2c2c;
   justify-content: space-evenly;
   padding: 0.25rem 0;
-  
+
   @media only screen and (max-width: 768px) {
     display: block;
     justify-content: center;
   }
-  `;
+`;
 
 export const AddressSubDiv = styled.div`
-justify-content: center;
+  justify-content: center;
   font-size: 0.75rem;
   display: flex;
   flex-direction: row;
