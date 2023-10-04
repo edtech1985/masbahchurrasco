@@ -9,7 +9,6 @@ export const StyledIconList = styled.ul`
   align-items: center;
 
   @media only screen and (max-width: 600px) {
-    margin-top: 0;
     justify-content: center; /* Centraliza horizontalmente */
     flex-wrap: wrap; /* Quebra para várias linhas */
   }
@@ -30,7 +29,6 @@ export const StyledIconItem = styled.li`
     color: inherit;
   }
   @media only screen and (max-width: 600px) {
-    font-size: 2rem;
     justify-content: center;
   }
 `;

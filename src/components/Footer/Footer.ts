@@ -6,7 +6,6 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vw;
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
@@ -25,12 +24,10 @@ export const StyledFooter = styled.footer`
 
 export const StyledIconList = styled.ul`
   display: flex;
-  margin-top: 1.5rem;
-  padding: 0;
   align-items: center;
+  padding-left: 2vw;
 
   @media only screen and (max-width: 600px) {
-    margin-top: 0;
     justify-content: center; /* Centraliza horizontalmente */
     flex-wrap: wrap; /* Quebra para várias linhas */
   }

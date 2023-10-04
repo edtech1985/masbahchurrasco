@@ -4,8 +4,8 @@ export const CardapioContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
   width: 100%;
+  max-width: 100vw;
   height: 100%;
   background-color: #f5f5f5;
 `;

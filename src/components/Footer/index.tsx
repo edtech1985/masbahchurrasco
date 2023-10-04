@@ -1,9 +1,7 @@
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import {
   StyledDevelopedBy,
   StyledDiv,
   StyledFooter,
-  StyledIconItem,
   StyledIconList,
   StyledRightsReserved,
 } from "./Footer";
@@ -15,12 +13,14 @@ export default function Footer() {
 
   return (
     <StyledFooter>
+      
       <StyledIconList>
         <FacebookIcon />
         <InstagramIcon />
         <WhatsappIcon />
         <WhatsappIcon2 />
       </StyledIconList>
+
       <StyledDiv>
         <StyledRightsReserved>
           Horário de Atendimento: <br></br>Segunda-feira à Sábado, das 19h às 23h

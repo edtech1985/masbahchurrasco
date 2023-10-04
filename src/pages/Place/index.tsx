@@ -20,7 +20,7 @@ export default function Place() {
             Unidade Campeche
           </Location>
           <Paragraph>
-            Localizada na Rua Sabino Anisio da Silveira, 116 - Silveira, 116 - Campeche, nossa unidade no Campeche é o local ideal para saborear deliciosos petiscos e sanduíches de churrasco. Estamos prontos para oferecer a você uma experiência gastronômica única e inesquecível.
+            Localizada na Rua Sabino Anisio da Silveira, 116 - Campeche, nossa unidade no Campeche é o local ideal para saborear deliciosos petiscos e sanduíches de churrasco. Estamos prontos para oferecer a você uma experiência gastronômica única e inesquecível.
           </Paragraph>
           <Location>
             Fone (Campeche): (48) 99133-8844

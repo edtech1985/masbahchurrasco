@@ -11,7 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: auto;
-    max-height: 100vh;
+    min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     background-color: var(--dark);
@@ -20,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     @media only screen and (max-width: 600px) {
       width: 100vw;
       height: auto;
-      max-height: 100vh;
     }
   }
 

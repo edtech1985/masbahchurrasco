@@ -1,9 +1,11 @@
-import { Container, Location, MainDiv, Paragraph, Title } from "./Home";
+import { AddressDiv, Container, Location, MainDiv, Paragraph, Title } from "./Home";
 import Carousel from "../../components/Carousel";
 
 export default function Home() {
   return (
     <Container>
+      <AddressDiv>Rua Sabino Anisio da Silveira, 116 - Campeche </AddressDiv> 
+      <AddressDiv>  Rua Cap. Romualdo de Barros, 933 - Carvoeira</AddressDiv>
       <Carousel />
       <MainDiv>
         <Title>MasBah! Churrasco: A Arte do Churrasco sobre Rodas</Title>

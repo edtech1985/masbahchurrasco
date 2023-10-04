@@ -1,15 +1,14 @@
 import styled from "styled-components";
+import BGImh from "../../assets/dishes/brasa.jpg"
 
 export const ContainerBackgroung = styled.section`
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   height: 100vh;
-  background-color: black;
-  background-image: url("https://receitinhas.com.br/wp-content/uploads/2016/12/hamburguer.jpg");
+  background-image: url(${BGImh});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Arial, sans-serif;
-  margin-bottom: 2rem;
 `;
 
 export const Container = styled.div`
@@ -22,28 +21,43 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-size: 3.5rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2.5rem;
+  }
   `;
 
 export const SubTitle = styled.h2`
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  
+  @media only screen and (max-width: 600px) {
+    font-size: 1.75rem;
+  }
 `;
 
 export const Order = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   `;
 
 export const Button = styled.button`
-  background-color: yellow;
-  color: red;
+  background-color: var(--yellow);
+  color: white;
   text-decoration: none;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
-  border: none;
-  border-radius: 1.3rem;
+  border: 1px solid var(--red);
+  border-radius: 1.25rem;
   cursor: pointer;
   margin-top: 1rem;
+
+  &:hover {
+    background-color: var(--red);
+    border: 1px solid var(--yellow);
+  }
 `;
 
 export const Cardapios = styled.div`

@@ -7,7 +7,7 @@ export default function Menu() {
     <>
       <ContainerBackgroung>
         <Container>
-          <Title>Delivery Masbah!Churrasco</Title>
+          <Title>Delivery Masbah! Churrasco</Title>
           <br />
           <SubTitle>
             Bagual antes de ser Gourmet!<br />

@@ -7,7 +7,7 @@ export function WhatsAppButtonCampeche() {
     target="_blank"
     rel="noreferrer"
     aria-label="WhatsApp MasBah! Churrasco Campeche"
-  >Campeche</WppButton>
+    >WhatsApp</WppButton>
   )
 }
 
@@ -19,6 +19,6 @@ export function WhatsAppButtonCampeche() {
     rel="noreferrer"
     aria-label="WhatsApp MasBah! Churrasco Carvoeira"
 
-  >Carvoeira</WppButton>
+  >WhatsApp</WppButton>
   )
 }

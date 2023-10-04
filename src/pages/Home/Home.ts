@@ -7,9 +7,18 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: auto; 
-  min-height: 80vh;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+`;
+
+export const AddressDiv = styled.div`
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 100vw;
+  z-index: 99;
+  padding: 0.15rem 0;
 `;
 
 export const MainDiv = styled.div`

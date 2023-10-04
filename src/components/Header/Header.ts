@@ -5,21 +5,15 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw;
   background-color: var(--dark);
-  width: 100vw;
+  width: 100%;
   max-height: 15vh;
   box-sizing: border-box;
   position: relative;
   border-bottom: 1px solid var(--red);
   box-shadow: 1px 3px 10px rgba(255, 0, 0, 0.5);
 
-  a {
-    text-decoration: none;
-  }
-  
   @media only screen and (max-width: 480px) {
-
     justify-content: left;
   }
 `;
@@ -28,6 +22,7 @@ export const LogoTitleDiv = styled.div`
   display: flex;
   width: 100%;
   max-width: 50vw;
+  margin-left: 3vw;
 `;
 
 export const Logo = styled.img`
@@ -43,7 +38,7 @@ export const Logo = styled.img`
 `;
 
 export const NavbarTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--red);
   align-items: center; //centraliza verticalmente
   display: flex;
@@ -58,12 +53,11 @@ export const NavbarTitle = styled.h2`
   }
 
   @media only screen and (min-width: 681px) and (max-width: 992px) {
-    
-  white-space: break-spaces;
-}
+    white-space: break-spaces;
+  }
 
-@media only screen and (max-width: 680px) {
-  display: none;
+  @media only screen and (max-width: 680px) {
+    display: none;
   }
 `;
 
@@ -74,10 +68,87 @@ interface BurgerMenuButtonProps {
 export const BurgerMenuButton = styled.button<BurgerMenuButtonProps>`
   display: none;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 480px) {
+    right: 2rem;
     display: block;
-    position: absolute;
-    top: 2rem;
+    position: relative;
+    z-index: 999;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 3rem;
+      height: 0.25rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      background-color: var(--red);
+      border-radius: 15px;
+      transform-origin: center;
+      transition: transform 1.25s ease-out, opacity 1.25s ease-out;
+
+      &:focus {
+        outline: none;
+      }
+      &:first-child {
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      }
+
+      &:nth-child(2) {
+        opacity: ${({ open }) => (open ? "0" : "1")};
+      }
+
+      &:nth-child(3) {
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      }
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 668px) {
+    display: block;
+    position: relative;
+    right: 2rem;
+    z-index: 999;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 3rem;
+      height: 0.25rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      background-color: var(--red);
+      border-radius: 15px;
+      transform-origin: center;
+      transition: transform 1.25s ease-out, opacity 1.25s ease-out;
+
+      &:focus {
+        outline: none;
+      }
+      &:first-child {
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      }
+
+      &:nth-child(2) {
+        opacity: ${({ open }) => (open ? "0" : "1")};
+      }
+
+      &:nth-child(3) {
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      }
+    }
+  }
+
+  @media screen and (min-width: 669px) and (max-width: 992px) {
+    display: block;
+    position: relative;
     right: 2.5rem;
     z-index: 999;
     width: 2rem;
@@ -142,16 +213,16 @@ export const Menu = styled.ul`
   list-style: none;
 
   @media only screen and (max-width: 992px) {
-  flex-direction: column;
+    flex-direction: column;
   }
 `;
 
 export const MenuItem = styled.li`
   display: block;
-  padding: 1vw;
+  padding: 0.5vw;
   color: #fff;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
   position: relative;
   white-space: nowrap;
 
@@ -186,8 +257,6 @@ export const MenuItem = styled.li`
   @media only screen and (max-width: 992px) {
     display: flex;
   }
-  ;
-
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
   }
@@ -226,21 +295,19 @@ export const DeliveryButton = styled.button`
 `;
 
 export const StyledSocialIcons = styled.div`
-  color: white;
   display: flex;
   justify-content: flex-end;
-  padding: 1vw;
+  padding: 2vw;
   gap: 1vw;
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
-  
+
   @media only screen and (max-width: 992px) {
-    padding-right: 10vw;
-    gap: 0.25vw;
+    padding-right: 3rem;
+    gap: 0.5vw;
   }
 
   @media only screen and (max-width: 480px) {
     display: none;
   }
 `;
-

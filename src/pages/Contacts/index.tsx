@@ -1,55 +1,76 @@
 import { WhatsAppButtonCampeche, WhatsAppButtonCarvoeira } from "../../components/Buttons/WhatsAppButton";
-import { Container, ContentDiv, MapDiv, MapImg, StyleLink, Subtitulo, Subtitulo3, TextDiv, Texto, TitleDiv, Titulo, WppDiv } from "./Contacts";
+import { ButtonsDiv, Container, ContentDiv, MapDiv, MapImg, SelectButton, SelectedDiv, StyleLink, Subtitulo, Subtitulo3, Texto, TitleDiv, Titulo, WppDiv } from "./Contacts";
 
 import MapCampeche from '../../assets/img/map-campeche.png'
+import { useState } from "react";
 
 
 export default function Contacts() {
+
+  const [showCampeche, setShowCampeche] = useState(true);
+  const [showCarvoeira, setShowCarvoeira] = useState(false);
+
   return (
     <Container>
       <TitleDiv>
         <Titulo>CONTATO E LOCALIZAÇÃO</Titulo>
-        <br />
-        <Subtitulo >Bagual antes de ser Gourmet</Subtitulo>
-        <Subtitulo>Os melhores Rangos da Cidade</Subtitulo>
+        <Subtitulo>Bagual antes de ser Gourmet</Subtitulo>
+        <Subtitulo>Os melhores rangos da cidade</Subtitulo>
       </TitleDiv>
 
-      <ContentDiv id="main-div">
+      <ButtonsDiv>
 
-        <MapDiv id="map">
+        <SelectButton onClick={() => [setShowCampeche(true), setShowCarvoeira(false)]}>Campeche</SelectButton>
+        <SelectButton onClick={() => [setShowCarvoeira(true), setShowCampeche(false)]}>Carvoeira</SelectButton>
+      </ButtonsDiv>
 
+      <ContentDiv>
+
+        <MapDiv>
           <MapImg src={MapCampeche} alt="Mapa Campeche" />
-
         </MapDiv>
 
-        <TextDiv>
-          <Texto>Seg à Sáb 19h às 23h</Texto>
+        <SelectedDiv>
 
-          <Subtitulo3>Campeche</Subtitulo3>
-          <Texto>(48) 99133-8844</Texto>
-          <Texto>
-            Rua Sabino Anisio da Silveira, 116 - Silveira, 116 - Campeche<br />
-            Florianópolis - SC
-          </Texto>
+          {showCampeche && (
+            <>
+              <Subtitulo3>Campeche</Subtitulo3>
+              <Texto>Segunda à Sábado das 19h às 23h</Texto>
+              <Texto>(48) 99133-8844</Texto>
+              <Texto>
+                Rua Sabino Anisio da Silveira, 116 - Campeche
+              </Texto>
+              <Texto>
+                Florianópolis - SC
+              </Texto>
+              <WppDiv>
+                <WhatsAppButtonCampeche />
+              </WppDiv>
+            </>
+          )}
 
-          <Subtitulo3>Carvoeira</Subtitulo3>
-          <Texto>(48) 99833-3303</Texto>
-          <Texto>
-            R. Cap. Romualdo de Barros, 933 - Carvoeira<br /> Florianópolis - SC
-          </Texto>
+          {showCarvoeira && (
+            <>
+              <Subtitulo3>Carvoeira</Subtitulo3>
+              <Texto>Segunda à Sábado das 19h às 23h</Texto>
+              <Texto>(48) 99833-3303</Texto>
+              <Texto>
+                Rua Capitão Romualdo de Barros, 933 - Carvoeira
+              </Texto>
+              <Texto> Florianópolis - SC
+              </Texto>
+              <WppDiv>
+                <WhatsAppButtonCarvoeira />
+              </WppDiv>
+            </>
+          )}
 
-          <StyleLink href="campechemasbah@gmail.com">Clique aqui para me enviar um email</StyleLink>
-
-          <WppDiv>
-
-            <WhatsAppButtonCampeche />
-            <WhatsAppButtonCarvoeira />
-
-          </WppDiv>
-
-        </TextDiv>
+        </SelectedDiv>
 
       </ContentDiv>
-    </Container>
+
+      <StyleLink href="campechemasbah@gmail.com">Clique aqui para me enviar um email</StyleLink>
+
+    </Container >
   )
 }
