@@ -211,6 +211,7 @@ export const NavBar = styled.nav<BurgerMenuProps>`
 export const Menu = styled.ul`
   display: flex;
   list-style: none;
+  align-items: center;
 
   @media only screen and (max-width: 992px) {
     flex-direction: column;
@@ -225,6 +226,7 @@ export const MenuItem = styled.li`
   font-size: 1rem;
   position: relative;
   white-space: nowrap;
+  text-align: center;
 
   &:hover {
     color: var(--red);
@@ -257,8 +259,10 @@ export const MenuItem = styled.li`
   @media only screen and (max-width: 992px) {
     display: flex;
   }
+
   @media only screen and (max-width: 600px) {
-    font-size: 1rem;
+    font-size: 2rem;
+    text-align: center;
   }
 `;
 
@@ -269,6 +273,7 @@ export const StyledNavItem = styled(Link)`
   text-decoration: none;
   font-size: 1.25rem;
   position: relative;
+  
 
   @media only screen and (max-width: 600px) {
     font-size: 1rem;

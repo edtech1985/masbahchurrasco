@@ -26,7 +26,6 @@ export const ContentDiv = styled.div`
   }
 `;
 
-
 export const MapDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,6 +35,12 @@ export const MapDiv = styled.div`
   padding: 1rem 1rem;
   height: 40vh;
   width: 45vw;
+
+  
+  @media only screen and (min-width:  1024px) {
+    justify-content: space-evenly;
+    width: 30vw;
+  }
 
   @media only screen and (max-width: 768px) {
    width: 100%;
@@ -54,6 +59,11 @@ export const SelectedDiv = styled.div`
   padding: 1rem 1rem;
   height: 40vh;
   width: 45vw;
+
+  @media only screen and (min-width:  1024px) {
+    justify-content: space-evenly;
+    width: 30vw;
+  }
 
   @media only screen and (max-width: 768px) {
    width: 100%;
@@ -83,6 +93,10 @@ export const Subtitulo3 = styled.h3`
   color: var(--red);
   font-weight: bold;
   margin-bottom: 0.75rem;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 2rem;
+  }
 `;
 
 export const MapImg = styled.img`
@@ -93,6 +107,10 @@ export const Texto = styled.p`
   color: white;
   font-size: 12px;
   line-height: 1.25rem;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 1rem;
+  }
 `;
 
 export const StyleLink = styled.a`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // Estilo para o contêiner principal
 export const Container = styled.div`
@@ -6,23 +6,36 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto; 
+  height: auto;
 `;
 
 export const AddressDiv = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 99;
+  width: 100vw;
+  background-color: #2c2c2c;
+  justify-content: space-evenly;
+  padding: 0.25rem 0;
+  
+  @media only screen and (max-width: 768px) {
+    display: block;
+    justify-content: center;
+  }
+  `;
+
+export const AddressSubDiv = styled.div`
+justify-content: center;
   font-size: 0.75rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  background-color: grey;
-  width: 100vw;
-  z-index: 99;
   padding: 0.15rem 0;
 `;
 
 export const MainDiv = styled.div`
-padding: 2rem;
+  padding: 2rem;
 `;
 
 // Estilo para os títulos
@@ -45,4 +58,3 @@ export const Location = styled.div`
   font-weight: bold;
   color: #ff5722;
 `;
-
