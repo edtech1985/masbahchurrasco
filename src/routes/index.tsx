@@ -8,20 +8,22 @@ import NotFound from "../pages/NotFound";
 import Menu from "../pages/Menu";
 import Place from "../pages/Place";
 import { Main } from "./Routes";
+import Cardapio from "../pages/Cardapio";
 
 export default function AppRouter() {
   return (
     <Router>
       <Header />
       <Main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/casa" element={<Place />} />
-        <Route path="/cardapio" element={<Menu />} />
-        <Route path="/sobre" element={<AboutUs />} />
-        <Route path="/contato" element={<Contacts />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/casa" element={<Place />} />
+          <Route path="/cardapio" element={<Menu />} />
+          <Route path="/cardapio2" element={<Cardapio />} />
+          <Route path="/sobre" element={<AboutUs />} />
+          <Route path="/contato" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Main>
       <Footer />
     </Router>
