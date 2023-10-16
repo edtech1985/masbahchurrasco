@@ -5,6 +5,7 @@ export const Container = styled.section`
   justify-items: center;
   padding-bottom: 2rem;
   box-sizing: border-box;
+  background-color: yellow;
 
   @media screen and (max-width: 768px) {
     text-align: center;
