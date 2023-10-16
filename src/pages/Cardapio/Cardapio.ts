@@ -5,12 +5,11 @@ export const Container = styled.section`
   justify-items: center;
   padding-bottom: 2rem;
   box-sizing: border-box;
-  background-color: yellow;
+  max-width: 100vw;
 
   @media screen and (max-width: 768px) {
     text-align: center;
-    align-items: center;
-    padding: 5vw;
+    align-items: center;;
   }
 `;
 
@@ -23,6 +22,7 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 3.5rem;
+    white-space: break-spaces;
   }
 `;
 
@@ -30,17 +30,43 @@ export const Subtitle = styled.h2`
   font-size: 4rem;
   color: var(--orange);
   font-family: var(--title);
-  margin: 2vw;
+  margin: 2vw 0;
   white-space: break-spaces;
 
   @media screen and (max-width: 768px) {
     font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
+    margin-top: 2.5rem;
   }
 `;
 
+export const H3 = styled.h3`
+  font-family: var(--options);
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  color: var(--white);
+  width: 50vw;
+  text-align: center;
+  color: var(--white-gray);
 
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    font-size: 1.3rem;
+  }
+`;
+
+export const H4 = styled.h4`
+  font-family: var(--options);
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-top: 2rem;
+`;
+
+export const Text = styled.p`
+  color: var(--white-gray);
+  margin: 2rem;
+`;
 
 export const Tabela = styled.table`
   line-height: 1.5rem;
@@ -55,7 +81,7 @@ export const Tabela = styled.table`
     /* margin-inline: auto;  */
     justify-content: center;
     align-items: center;
-    padding: 0rem;
+    padding: 0rem 2rem;
   }
 `;
 
@@ -112,12 +138,11 @@ export const Bottom = styled.td`
   font-family: var(--options);
   color: var(--white);
   font-size: 1.2rem;
-  padding-right: 1rem;
 
   @media screen and (max-width: 768px) {
-    /* background-color: #d9b13b; */
-    width: 5vw;
-    text-align: right;
+    background-color: purple;
+    text-align: left;
+    padding-bottom: 1rem;
   }
 `;
 
@@ -160,10 +185,6 @@ export const Cabecalho = styled.th`
     width: auto;
     padding-left: 0.75rem;
   }
-
-  /* &:nth-child(3) {
-      padding-left: 1rem;
-    } */
 `;
 
 export const Adicionais = styled.div`
@@ -183,35 +204,12 @@ export const Churras = styled.div`
   padding: 1.5rem;
   text-align: center;
   width: 70vw;
-
+  
   @media screen and (max-width: 768px) {
-    width: 90vw;
+    max-width: 100vw;
+    padding: 0;
   }
 `;
 
-export const Text = styled.p`
-  color: var(--white-gray);
-  margin: 2rem;
-`;
 
-export const H3 = styled.h3`
-  font-family: var(--options);
-  font-size: 1.5rem;
-  margin: 1rem auto;
-  color: var(--white);
-  width: 50vw;
-  text-align: center;
-  color: var(--white-gray);
 
-  @media screen and (max-width: 768px) {
-    width: 90vw;
-    font-size: 1.3rem;
-  }
-`;
-
-export const H4 = styled.h4`
-  font-family: var(--options);
-  font-size: 1.8rem;
-  color: var(--white);
-  margin-top: 2rem;
-`;

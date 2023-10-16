@@ -28,7 +28,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Assado de Vazio Angus</strong>
           </Celula>
-          <Celula>R$68</Celula>
+          <Td3>R$68</Td3>
         </tr>
         <tr>
           <Caption>
@@ -40,7 +40,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Assado de Frango</strong>
           </Celula>
-          <Celula>R$48</Celula>
+          <Td3>R$48</Td3>
         </tr>
         <tr>
           <Caption>
@@ -52,7 +52,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Assado de Coração</strong>
           </Celula>
-          <Celula>R$45</Celula>
+          <Td3>R$45</Td3>
         </tr>
         <tr>
           <Caption>
@@ -64,7 +64,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Batata Frita</strong>
           </Celula>
-          <Celula>R$18</Celula>
+          <Td3>R$18</Td3>
         </tr>
         <tr>
           <Caption>Pequena</Caption>
@@ -74,7 +74,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Batata Frita</strong>
           </Celula>
-          <Celula>R$28</Celula>
+          <Td3>R$28</Td3>
         </tr>
         <tr>
           <Caption>Grande</Caption>
@@ -84,7 +84,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Polenta Frita</strong>
           </Celula>
-          <Celula>R$15</Celula>
+          <Td3>R$15</Td3>
         </tr>
         <tr>
           <Caption>Pequena</Caption>
@@ -94,7 +94,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Polenta Frita</strong>
           </Celula>
-          <Celula>R$25</Celula>
+          <Td3>R$25</Td3>
         </tr>
         <tr>
           <Caption>Grande</Caption>
@@ -108,7 +108,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Te Ilumina!</strong>
           </Celula>
-          <Celula>R$52</Celula>
+          <Td3>R$52</Td3>
         </tr>
 
         <tr>
@@ -220,14 +220,14 @@ export default function Cardapio() {
           <Bottom>
             <strong>Fraldinha defumada 20h</strong>
           </Bottom>
-          <Celula>R$49</Celula>
+          <TdTdCel>R$49</TdTdCel>
         </tr>
 
         <tr>
           <Celula>
             <strong>Pernil defumado 20h</strong>
           </Celula>
-          <Celula>R$47</Celula>
+          <TdTdCel>R$47</TdTdCel>
         </tr>
 
         <tr>
@@ -238,7 +238,7 @@ export default function Cardapio() {
           <Celula>
             <strong>Sobrecoxa desossada</strong>
           </Celula>
-          <Celula>R$45</Celula>
+          <TdTdCel>R$45</TdTdCel>
         </tr>
 
         <tr>
@@ -249,13 +249,13 @@ export default function Cardapio() {
           <Bottom>
             <strong>Linguiça Parrilla</strong>
           </Bottom>
-          <Celula>R$45</Celula>
+          <TdTdCel>R$45</TdTdCel>
         </tr>
         <tr>
           <Bottom>
             <strong>Vegetariano</strong>
           </Bottom>
-          <Celula>R$38</Celula>
+          <TdTdCel>R$38</TdTdCel>
         </tr>
       </Tabela>
 
@@ -432,19 +432,19 @@ export default function Cardapio() {
           <Bottom>
             <strong>Refrigerante Lata</strong>
           </Bottom>
-          <Celula>R$7</Celula>
+          <Td3>R$7</Td3>
         </tr>
         <tr>
           <Bottom>
             <strong>Heineken Long Neck</strong>
           </Bottom>
-          <Celula>R$10</Celula>
+          <Td3>R$10</Td3>
         </tr>
         <tr>
           <Bottom>
             <strong>Água</strong>
           </Bottom>
-          <Celula>R$6</Celula>
+          <Td3>R$6</Td3>
         </tr>
       </Tabela>
     </Container>
