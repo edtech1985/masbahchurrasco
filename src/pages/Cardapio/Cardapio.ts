@@ -4,10 +4,12 @@ export const Container = styled.section`
   display: grid;
   justify-items: center;
   padding-bottom: 2rem;
+  box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
     text-align: center;
     align-items: center;
+    padding: 5vw;
   }
 `;
 
@@ -16,19 +18,28 @@ export const Title = styled.h1`
   font-size: 5.5rem;
   color: red;
   margin-top: 2.5rem;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const Subtitle = styled.h2`
   font-size: 4rem;
   color: var(--orange);
   font-family: var(--title);
-  margin: 2.5rem 2rem 1.5rem;
+  margin: 2vw;
+  white-space: break-spaces;
 
   @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
   }
 `;
+
+
 
 export const Tabela = styled.table`
   line-height: 1.5rem;
@@ -36,13 +47,49 @@ export const Tabela = styled.table`
   /* margin-top: 2rem; */
   text-align: left;
   padding: 1rem;
-
+  
   @media screen and (max-width: 768px) {
-    width: 95vw;
+    width: 100%;
     /* background-color: green; */
     /* margin-inline: auto;  */
     justify-content: center;
     align-items: center;
+    padding: 0rem;
+  }
+`;
+
+export const TabelaSand = styled.table`
+  line-height: 1.5rem;
+  width: 80vw;
+  /* margin-top: 2rem; */
+  text-align: left;
+  padding: 1rem;
+  
+  @media screen and (max-width: 768px) {
+    padding: 0rem;
+    &:first-child {
+      width: 100%;
+      background-color: green;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* &:nth-child(2) {
+      padding-left: 5rem;
+    } */
+  }
+`;
+
+export const Td3 = styled.td`
+  font-family: var(--options);
+  color: var(--white);
+  font-size: 1.2rem;
+  padding-left: 3rem;
+  text-align: right;
+  background-color: red;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0rem;
   }
 `;
 
@@ -54,14 +101,9 @@ export const Caption = styled.td`
   padding-bottom: 1rem;
   padding-right: 1rem;
 
-  td + td {
-    text-align: right;
-
-    @media screen and (max-width: 768px) {
-      /* background-color: #d9b13b; */
-      width: 5vw;
-      text-align: right;
-    }
+  @media screen and (max-width: 768px) {
+    /* background-color: #d9b13b; */
+    width: auto;
   }
 `;
 
@@ -71,14 +113,10 @@ export const Bottom = styled.td`
   font-size: 1.2rem;
   padding-right: 1rem;
 
-  td + td {
+  @media screen and (max-width: 768px) {
+    /* background-color: #d9b13b; */
+    width: 5vw;
     text-align: right;
-
-    @media screen and (max-width: 768px) {
-      /* background-color: #d9b13b; */
-      width: 5vw;
-      text-align: right;
-    }
   }
 `;
 
@@ -86,16 +124,28 @@ export const Celula = styled.td`
   font-family: var(--options);
   color: var(--white);
   font-size: 1.2rem;
+`;
 
-  td + td {
+export const TdTdCel = styled.td`
+  font-family: var(--options);
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: right;
+  background-color: #d9b13b;
+
+  @media screen and (max-width: 768px) {
+    width: 5vw;
     text-align: right;
-
-    @media screen and (max-width: 768px) {
-      /* background-color: #d9b13b; */
-      width: 5vw;
-      text-align: right;
-    }
+    background-color: #d9b;
   }
+`;
+
+export const Cabecalho1 = styled.th`
+  font-family: var(--options);
+  padding-bottom: 0.5rem;
+  color: var(--orange);
+  font-size: 1.2rem;
+  text-align: left;
 `;
 
 export const Cabecalho = styled.th`
@@ -104,17 +154,24 @@ export const Cabecalho = styled.th`
   color: var(--orange);
   font-size: 1.2rem;
   text-align: right;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    padding-left: 0.75rem;
+  }
+
+  /* &:nth-child(3) {
+      padding-left: 1rem;
+    } */
 `;
 
 export const Adicionais = styled.div`
-  width: 80%;
-  border: none;
+  width: 80vw;
   margin-bottom: 1rem;
 
   @media screen and (max-width: 768px) {
     /* background-color: #f25922; */
-    width: 90vw;
-    padding: 0;
+    width: 100vw;
     margin-bottom: 0;
   }
 `;

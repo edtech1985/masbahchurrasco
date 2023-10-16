@@ -2,6 +2,7 @@ import {
   Adicionais,
   Bottom,
   Cabecalho,
+  Cabecalho1,
   Caption,
   Celula,
   Churras,
@@ -10,10 +11,11 @@ import {
   H4,
   Subtitle,
   Tabela,
+  Td3,
+  TdTdCel,
   Text,
   Title,
 } from "./Cardapio";
-import "./styles.css";
 
 export default function Cardapio() {
   return (
@@ -125,7 +127,7 @@ export default function Cardapio() {
 
       <Tabela className="sandwiches">
         <tr>
-          <Cabecalho></Cabecalho>
+          <Cabecalho1></Cabecalho1>
           <Cabecalho>15cm</Cabecalho>
           <Cabecalho>20cm</Cabecalho>
         </tr>
@@ -134,8 +136,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Não te mixa!</strong>
           </Celula>
-          <Celula>R$38</Celula>
-          <Celula>R$46</Celula>
+          <Td3>R$38</Td3>
+          <Td3>R$46</Td3>
         </tr>
 
         <tr>
@@ -146,8 +148,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Fronteira</strong>
           </Celula>
-          <Celula>R$37</Celula>
-          <Celula>R$43</Celula>
+          <Td3>R$37</Td3>
+          <Td3>R$43</Td3>
         </tr>
 
         <tr>
@@ -158,8 +160,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Maragato</strong>
           </Celula>
-          <Celula>R$36</Celula>
-          <Celula>R$44</Celula>
+          <Td3>R$36</Td3>
+          <Td3>R$44</Td3>
         </tr>
 
         <tr>
@@ -172,8 +174,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Charrua</strong>
           </Celula>
-          <Celula>R$35</Celula>
-          <Celula>R$43</Celula>
+          <Td3>R$35</Td3>
+          <Td3>R$43</Td3>
         </tr>
 
         <tr>
@@ -184,8 +186,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Tri Massa!</strong>
           </Celula>
-          <Celula>R$33</Celula>
-          <Celula>R$40</Celula>
+          <Td3>R$33</Td3>
+          <Td3>R$40</Td3>
         </tr>
 
         <tr>
@@ -196,8 +198,8 @@ export default function Cardapio() {
           <Celula>
             <strong>Vegetariano</strong>
           </Celula>
-          <Celula>R$27</Celula>
-          <Celula>R$33</Celula>
+          <Td3>R$27</Td3>
+          <Td3>R$33</Td3>
         </tr>
 
         <tr>
@@ -265,43 +267,43 @@ export default function Cardapio() {
             <Celula>
               <strong>Fraldinha def.</strong>
             </Celula>
-            <Celula>R$10</Celula>
+            <TdTdCel>R$10</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Hamburguer</strong>
             </Celula>
-            <Celula>R$10</Celula>
+            <TdTdCel>R$10</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Frango</strong>
             </Celula>
-            <Celula>R$8</Celula>
+            <TdTdCel>R$8</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Bacon</strong>
             </Celula>
-            <Celula>R$7</Celula>
+            <TdTdCel>R$7</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Coração</strong>
             </Celula>
-            <Celula>R$7</Celula>
+            <TdTdCel>R$7</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Gorgonzola</strong>
             </Celula>
-            <Celula>R$8</Celula>
+            <TdTdCel>R$8</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Queijo</strong>
             </Celula>
-            <Celula>R$6</Celula>
+            <TdTdCel>R$6</TdTdCel>
           </tr>
         </Tabela>
 
@@ -310,43 +312,43 @@ export default function Cardapio() {
             <Celula>
               <strong>Catupiry</strong>
             </Celula>
-            <Celula>R$6</Celula>
+            <TdTdCel>R$6</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Tomatinho</strong>
             </Celula>
-            <Celula>R$6</Celula>
+            <TdTdCel>R$6</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Chimichurri</strong>
             </Celula>
-            <Celula>R$6</Celula>
+            <TdTdCel>R$6</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Geléia</strong>
             </Celula>
-            <Celula>R$6</Celula>
+            <TdTdCel>R$6</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Abobrinha</strong>
             </Celula>
-            <Celula>R$5</Celula>
+            <TdTdCel>R$5</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Rúcula</strong>
             </Celula>
-            <Celula>R$4</Celula>
+            <TdTdCel>R$4</TdTdCel>
           </tr>
           <tr>
             <Celula>
               <strong>Maionese</strong>
             </Celula>
-            <Celula>R$5</Celula>
+            <TdTdCel>R$5</TdTdCel>
           </tr>
         </Tabela>
       </Adicionais>
