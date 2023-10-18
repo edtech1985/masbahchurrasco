@@ -3,8 +3,9 @@ import { CarouselImage, CarrosselContainer, CarrosselSection, Indicator, Indicat
 import { useState, useEffect } from "react";
 
 const carouselImages = [
-  require("../../assets/banner/banner.webp"),
-  require("../../assets/banner/banner (1).jpg"),
+  require("../../assets/carrossel/banner1.png"),
+  require("../../assets/carrossel/banner2.png"),
+  require("../../assets/carrossel/banner3.png"),
 ];
 
 export default function Carousel() {

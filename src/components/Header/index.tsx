@@ -36,10 +36,10 @@ export default function Header() {
               <MenuItem>Home</MenuItem>
             </StyledNavItem>
             <StyledNavItem
-              to="/casa"
+              to="/historia"
               aria-label="Sobre A Casa"
               onClick={handleNavClick}>
-              <MenuItem>A Casa</MenuItem>
+              <MenuItem>História</MenuItem>
             </StyledNavItem>
             <StyledNavItem
               to="/cardapio"

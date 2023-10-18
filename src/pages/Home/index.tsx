@@ -1,4 +1,4 @@
-import { AddressDiv, AddressSubDiv, Container, Location, MainDiv, Paragraph, Title } from "./Home";
+import { AddressDiv, AddressSubDiv, Container, MainDiv, Paragraph, Title } from "./Home";
 import Carousel from "../../components/Carousel";
 
 export default function Home() {
@@ -11,28 +11,24 @@ export default function Home() {
       </AddressDiv>
 
       <Carousel />
+
       <MainDiv>
-        <Title>MasBah! Churrasco: A Arte do Churrasco sobre Rodas</Title>
-        <Location>
-          Churrasco sobre Rodas na Praia do Campeche e na Carvoeira
-        </Location>
+        <Title>MasBah! Churrasco: Bagual antes de ser Gourmet!</Title>
+        <h2>Um Pouco de História</h2>
         <Paragraph>
-          Sabor Autêntico e Variedade Incomparável
+        Nossa ideia inicial era criar uma churrasqueira grande sobre rodas. Gostávamos de poder conhecer novos lugares, sermos móveis e itinerantes. Sair por aí fazendo churrasco de um jeito diferente.
         </Paragraph>
         <Paragraph>
-          Na Praia do Campeche e na Carvoeira, você encontra o MasBah! Churrasco, o novo ícone da gastronomia local. Com paixão pelo churrasco tradicional e autêntico, trazemos até você uma experiência única que une a conveniência da churrasqueira e forno sobre rodas à qualidade dos nossos petiscos e sanduíches de churrasco com molhos artesanais.
+        Não demorou muito até entendermos que o nosso propósito não era apenas o de vender comida. Através de um simples nome, nossa simbologia, cores, temperos, receitas, preparos, conceitos, personagens, notamos que de forma despretensiosa e espontânea, entregávamos um pouco da nossa história e reafirmavamos com isso, a nossa identidade cultural.
         </Paragraph>
         <Paragraph>
-          O MasBah! Churrasco é a escolha perfeita para quem busca o verdadeiro sabor do churrasco, em qualquer momento e em qualquer lugar.
+        Assim surgiu o MasBah! Com uma "cara" que parece aquela pessoa que você conhece de algum lugar, mas não sabe bem de onde. Deve ser pelo jeito que te tratam quando você chega, pela simplicidade do local ou pelo cheiro acolhedor que a lenha e outros sentidos te trazem à memória.
         </Paragraph>
         <Paragraph>
-          Nosso cardápio oferece uma variedade de opções que vão desde petiscos até sanduíches recheados de sabor, tudo preparado com carnes selecionadas e molhos especiais, garantindo um verdadeiro festival de sabores.
+        Ou pelas lembranças antigas que vêm do som de uma risada espontânea dos guris, do rock tocando ao fundo, dos carros passando... Mas, principalmente, pela "viagem" que é experimentar um alimento que levou 20 horas para ser preparado e produzido.
         </Paragraph>
         <Paragraph>
-          Além disso, nossas unidades na Praia do Campeche e na Carvoeira proporcionam um ambiente descontraído, onde você pode desfrutar de momentos deliciosos em boa companhia.
-        </Paragraph>
-        <Paragraph>
-          Venha conhecer o MasBah! Churrasco e descubra o segredo por trás dos melhores rangos da cidade. Esperamos por você!
+        Uma mistura de ingredientes "matadores" e cheia de complexidade. É difícil definir o que é comer um "Não te Mixa!", por exemplo. Um sanduíche rebuscado e muito louco que é finalizado em menos de 3 minutos? E ainda feito por um monte de "Figuras" naquele que acabou sendo um dos maiores e mais queridos food trucks de churrasco em atividade no Brasil.
         </Paragraph>
       </MainDiv>
     </Container>

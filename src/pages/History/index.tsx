@@ -1,10 +1,9 @@
-import { Container, Location, Paragraph, SubTitle, Title, Unit, UnitsDiv } from "./Place";
+import { Container, Location, Paragraph, SubTitle, Unit, UnitsDiv } from "./History";
 
-export default function Place() {
+export default function History() {
   return (
     <Container>
-
-      <Title>Sabores em Dobro: Duas Unidades, Uma Experiência Inigualável!</Title>
+    
       <SubTitle>Descubra o Mundo do Churrasco no MasBah! Churrasco</SubTitle>
       <Paragraph>
         Se você é apaixonado por churrasco, temos uma excelente notícia para você! O MasBah! Churrasco está presente em duas localidades incríveis em Florianópolis, para satisfazer o seu desejo por sabores autênticos a qualquer momento.

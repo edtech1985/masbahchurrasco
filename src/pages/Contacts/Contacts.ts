@@ -76,7 +76,13 @@ export const WppDiv = styled.div`
   padding: 1rem;
 `;
 
-export const Titulo = styled.h1`
+export const Title = styled.h1`
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+export const Titulo = styled.h2`
   color: var(--white);
   font-size: 40px;
   margin-bottom: 0.75rem;

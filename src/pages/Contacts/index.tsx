@@ -1,5 +1,5 @@
 import { WhatsAppButtonCampeche, WhatsAppButtonCarvoeira } from "../../components/Buttons/WhatsAppButton";
-import { ButtonsDiv, Container, ContentDiv, MapDiv, SelectButton, SelectedDiv, StyleLink, Subtitulo, Subtitulo3, Texto, TitleDiv, Titulo, WppDiv } from "./Contacts";
+import { ButtonsDiv, Container, ContentDiv, MapDiv, SelectButton, SelectedDiv, StyleLink, Subtitulo, Subtitulo3, Texto, Title, TitleDiv, Titulo, WppDiv } from "./Contacts";
 
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ export default function Contacts() {
   return (
     <Container>
       <TitleDiv>
+      <Title>Sabores em Dobro: Duas Unidades, Uma Experiência Inigualável!</Title>
         <Titulo>CONTATO E LOCALIZAÇÃO</Titulo>
         <Subtitulo>Bagual antes de ser Gourmet</Subtitulo>
         <Subtitulo>Os melhores rangos da cidade</Subtitulo>
