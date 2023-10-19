@@ -1,25 +1,11 @@
-import {
-  AddressDiv,
-  AddressSubDiv,
-  Container,
-  MainDiv,
-  Paragraph,
-  SubTitle,
-  Title,
-} from "./Home";
+import { Container, MainDiv, Paragraph, SubTitle, Title } from "./Home";
 import Carousel from "../../components/Carousel";
+import AddressBar from "../../components/AddressBar";
 
 export default function Home() {
   return (
     <Container>
-      <AddressDiv>
-        <AddressSubDiv>
-          Rua Sabino Anisio da Silveira, 116 - Campeche{" "}
-        </AddressSubDiv>
-        <AddressSubDiv>
-          Rua Cap. Romualdo de Barros, 933 - Carvoeira
-        </AddressSubDiv>
-      </AddressDiv>
+      <AddressBar />
 
       <Carousel />
 
