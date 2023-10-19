@@ -201,7 +201,7 @@ export const NavBar = styled.nav<BurgerMenuProps>`
     top: 0;
     right: 0;
     flex-direction: flex;
-    background-color: var(--orange); //fundo bruger menu down
+    background-color: var(--dark); //fundo bruger menu down
     width: 100%;
     height: 100vh;
     z-index: 999;
@@ -273,7 +273,6 @@ export const StyledNavItem = styled(Link)`
   text-decoration: none;
   font-size: 1.25rem;
   position: relative;
-  
 
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
