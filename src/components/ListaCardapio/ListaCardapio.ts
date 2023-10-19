@@ -9,7 +9,7 @@ export const Container = styled.section`
 
   @media screen and (max-width: 768px) {
     text-align: center;
-    align-items: center;;
+    align-items: center;
   }
 `;
 
@@ -71,14 +71,11 @@ export const Text = styled.p`
 export const Tabela = styled.table`
   line-height: 1.5rem;
   width: 80vw;
-  /* margin-top: 2rem; */
   text-align: left;
   padding: 1rem;
-  
+
   @media screen and (max-width: 768px) {
     width: 100%;
-    /* background-color: green; */
-    /* margin-inline: auto;  */
     justify-content: center;
     align-items: center;
     padding: 0rem 2rem;
@@ -88,22 +85,16 @@ export const Tabela = styled.table`
 export const TabelaSand = styled.table`
   line-height: 1.5rem;
   width: 80vw;
-  /* margin-top: 2rem; */
   text-align: left;
   padding: 1rem;
-  
+
   @media screen and (max-width: 768px) {
     padding: 0rem;
     &:first-child {
       width: 100%;
-      background-color: green;
       justify-content: center;
       align-items: center;
     }
-
-    /* &:nth-child(2) {
-      padding-left: 5rem;
-    } */
   }
 `;
 
@@ -113,7 +104,6 @@ export const Td3 = styled.td`
   font-size: 1.2rem;
   padding-left: 3rem;
   text-align: right;
-  background-color: red;
 
   @media screen and (max-width: 768px) {
     padding-left: 0rem;
@@ -129,7 +119,6 @@ export const Caption = styled.td`
   padding-right: 1rem;
 
   @media screen and (max-width: 768px) {
-    /* background-color: #d9b13b; */
     width: auto;
   }
 `;
@@ -140,7 +129,6 @@ export const Bottom = styled.td`
   font-size: 1.2rem;
 
   @media screen and (max-width: 768px) {
-    background-color: purple;
     text-align: left;
     padding-bottom: 1rem;
   }
@@ -157,12 +145,10 @@ export const TdTdCel = styled.td`
   color: var(--white);
   font-size: 1.2rem;
   text-align: right;
-  background-color: #d9b13b;
 
   @media screen and (max-width: 768px) {
     width: 5vw;
     text-align: right;
-    background-color: #d9b;
   }
 `;
 
@@ -198,18 +184,15 @@ export const Adicionais = styled.div`
 `;
 
 export const Churras = styled.div`
-  border: 1px dotted var(--white-gray);
+  border: 2px dotted var(--grey);
   margin-top: 2rem;
   padding: 1.5rem;
   text-align: center;
   max-width: 90vw;
-  
+
   @media screen and (max-width: 768px) {
-    border: 1px dotted var(--white-gray); /* Defina novamente a espessura da borda */
+    border: 1px dotted var(--grey);
     max-width: 80vw;
     padding: 0;
   }
 `;
-
-
-

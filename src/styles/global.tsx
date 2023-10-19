@@ -30,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   --orange: #F28A2E;
   --red: #F25922;
   --white: #F2F2F2;
+  --grey: #A8A8A8;
   --title: "Allura", cursive;
   --options: "Source Sans 3", sans-serif;
 }
