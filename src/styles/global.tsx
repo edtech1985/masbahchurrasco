@@ -17,6 +17,26 @@ export const GlobalStyle = createGlobalStyle`
     justify-content: center;
     background-color: var(--dark);
     color: var(--white);
+    text-align: center;
+    
+    h1{
+      font-family: var(--title);
+      font-size: 36px;
+    }
+
+    h2{
+      font-family: var(--title);
+      font-size: 28px;
+    }
+
+    h3{
+      font-family: var(--title);
+      font-size: 24px;
+    }
+
+    p{
+      font-family: var(--options);
+    }
     
     @media only screen and (max-width: 600px) {
       width: 100vw;

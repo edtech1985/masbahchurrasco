@@ -8,7 +8,6 @@ export const Container = styled.div`
   min-height: 60vh;
   height: auto;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
   padding: 1rem 2rem;
   text-align: center;
 `;
@@ -19,7 +18,6 @@ export const AddressDiv = styled.div`
   text-align: center;
   z-index: 99;
   width: 100vw;
-  background-color: #2c2c2c;
   justify-content: space-evenly;
   padding: 0.25rem 0;
 
@@ -42,30 +40,22 @@ export const MainDiv = styled.div`
   padding: 2rem;
 `;
 
-// Estilo para os títulos
 export const Title = styled.h1`
   font-size: 24px;
-  color: #333;
+  color: var(--red);
   margin-bottom: 10px;
 `;
 
-// Estilo para os parágrafos
 export const Paragraph = styled.p`
   font-size: 16px;
-  color: #666;
+  color: var(--white);
   margin-bottom: 20px;
 `;
 
 export const SubTitle = styled.h2`
   font-size: 20px;
-  color: #333;
+  color: var(--orange);
   margin-bottom: 10px;
-`;
-
-export const Location = styled.div`
-  font-size: 18px;
-  font-weight: bold;
-  color: #ff5722;
 `;
 
 export const UnitsDiv = styled.div`
