@@ -1,16 +1,29 @@
 import styled from "styled-components";
 
+import BgImg from "../../assets/img/newbg.png";
+
 export const Container = styled.section`
   display: grid;
   justify-items: center;
   padding-bottom: 2rem;
   box-sizing: border-box;
   max-width: 100vw;
+  background: url(${BgImg});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 
   @media screen and (max-width: 768px) {
     text-align: center;
     align-items: center;
+    background-position: right;
   }
+`;
+
+export const DivParallax = styled.div`
+  height: 35vh;
+  width: 100vw;
 `;
 
 export const Title = styled.h1`
@@ -32,6 +45,7 @@ export const Subtitle = styled.h2`
   font-family: var(--title);
   margin: 2vw 0;
   white-space: break-spaces;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     font-size: 2.5rem;

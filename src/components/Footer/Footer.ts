@@ -1,24 +1,29 @@
 import styled from "styled-components";
 
+import BgImg from "../../assets/img/newbtbar.png";
+
 export const StyledFooter = styled.footer`
-  background-color: var(--dark);
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: auto;
   max-width: 100vw;
   box-sizing: border-box;
-  max-height: 20vh;
   border-top: 1px solid var(--red);
+  background-image: url(${BgImg});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   @media only screen and (max-width: 600px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
     justify-content: center;
-    flex-direction: column;
-    max-height: 20vh;
     height: auto;
+    display: block;
   }
 `;
 
@@ -26,10 +31,15 @@ export const StyledIconList = styled.ul`
   display: flex;
   align-items: center;
   padding-left: 2vw;
+  justify-content: flex-start;
+  width: 33%;
 
   @media only screen and (max-width: 600px) {
     justify-content: center; /* Centraliza horizontalmente */
     flex-wrap: wrap; /* Quebra para várias linhas */
+    width: 100%;
+    padding: 0;
+    height: auto;
   }
 `;
 
@@ -106,4 +116,18 @@ export const StyledDiv = styled.div`
   text-align: center;
   vertical-align: center;
   justify-content: center;
+  width: 33%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const StyledDiv2 = styled.div`
+  width: 33%;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+    width: 0;
+  }
 `;
