@@ -27,7 +27,6 @@ export const DivParallax = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: var(--title);
   font-size: 5.5rem;
   color: red;
   margin-top: 2.5rem;
@@ -42,7 +41,6 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
   font-size: 4rem;
   color: var(--orange);
-  font-family: var(--title);
   margin: 2vw 0;
   white-space: break-spaces;
   z-index: 10;
@@ -56,7 +54,6 @@ export const Subtitle = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-family: var(--options);
   font-size: 1.5rem;
   margin: 1rem auto;
   color: var(--white);
@@ -72,7 +69,6 @@ export const H3 = styled.h3`
 `;
 
 export const H4 = styled.h4`
-  font-family: var(--options);
   font-size: 1.8rem;
   color: var(--white);
   margin-top: 2rem;
