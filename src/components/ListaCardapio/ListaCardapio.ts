@@ -34,7 +34,6 @@ export const Title = styled.h1`
   box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
-    font-family: var(--mobile);
     font-size: 3.5rem;
     white-space: break-spaces;    
   }
@@ -52,7 +51,7 @@ export const Subtitle = styled.h2`
     font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 `;
 
@@ -68,6 +67,7 @@ export const H3 = styled.h3`
   @media screen and (max-width: 768px) {
     width: 90vw;
     font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
 `;
 
