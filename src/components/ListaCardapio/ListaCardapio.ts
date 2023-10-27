@@ -34,8 +34,9 @@ export const Title = styled.h1`
   box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
+    font-family: var(--mobile);
     font-size: 3.5rem;
-    white-space: break-spaces;
+    white-space: break-spaces;    
   }
 `;
 
