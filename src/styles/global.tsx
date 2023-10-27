@@ -33,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
   --grey: #A8A8A8;
   --title: "Allura", cursive;
   --options: "Source Sans 3", sans-serif;
+  --mobile: "Playpen Sans", cursive;
 }
   
 `;
