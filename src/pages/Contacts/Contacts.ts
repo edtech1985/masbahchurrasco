@@ -77,27 +77,27 @@ export const WppDiv = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 24px;
-  color: #333;
+  font-size: 32px;
+  color: var(--red);
   margin-bottom: 10px;
+  
 `;
 
 export const Titulo = styled.h2`
   color: var(--white);
-  font-size: 40px;
+  font-size: 28px;
   margin-bottom: 0.75rem;
   text-align: center;
 `;
 
 export const Subtitulo = styled.h2`
-  color: var(--red);
-  font-size: 18px;
+  color: var(--orange);
+  font-size: 20px;
   margin-bottom: 0.5rem;
 `;
 export const Subtitulo3 = styled.h3`
   font-size: 15px;
-  color: var(--red);
-  font-weight: bold;
+  color: var(--orange);
   margin-bottom: 0.75rem;
 
   @media only screen and (min-width: 1024px) {
