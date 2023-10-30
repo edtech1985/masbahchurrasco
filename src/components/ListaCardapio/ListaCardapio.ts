@@ -27,14 +27,12 @@ export const DivParallax = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-family: var(--title);
   font-size: 5.5rem;
   color: red;
   margin-top: 2.5rem;
   box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
-    font-family: var(--mobile);
     font-size: 3.5rem;
     white-space: break-spaces;    
   }
@@ -43,7 +41,6 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
   font-size: 4rem;
   color: var(--orange);
-  font-family: var(--title);
   margin: 2vw 0;
   white-space: break-spaces;
   z-index: 10;
@@ -52,12 +49,11 @@ export const Subtitle = styled.h2`
     font-size: 2.5rem;
     text-align: center;
     line-height: 3.5rem;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
   }
 `;
 
 export const H3 = styled.h3`
-  font-family: var(--options);
   font-size: 1.5rem;
   margin: 1rem auto;
   color: var(--white);
@@ -68,11 +64,11 @@ export const H3 = styled.h3`
   @media screen and (max-width: 768px) {
     width: 90vw;
     font-size: 1.3rem;
+    margin-top: 0.5rem;
   }
 `;
 
 export const H4 = styled.h4`
-  font-family: var(--options);
   font-size: 1.8rem;
   color: var(--white);
   margin-top: 2rem;
