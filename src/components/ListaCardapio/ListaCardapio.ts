@@ -27,6 +27,7 @@ export const DivParallax = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-family: var(--title);
   font-size: 5.5rem;
   color: red;
   margin-top: 2.5rem;
@@ -34,11 +35,12 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 3.5rem;
-    white-space: break-spaces;    
+    white-space: break-spaces;
   }
 `;
 
 export const Subtitle = styled.h2`
+  font-family: var(--title);
   font-size: 4rem;
   color: var(--orange);
   margin: 2vw 0;

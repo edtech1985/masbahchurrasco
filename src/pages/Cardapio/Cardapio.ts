@@ -43,20 +43,21 @@ export const Order = styled.div`
   `;
 
 export const Button = styled.button`
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: white;
   text-decoration: none;
   padding: 1rem 2rem;
   font-size: 1.25rem;
   text-transform: uppercase;
-  border: 1px solid var(--red);
+  border: 1px solid var(--yellow);
   border-radius: 1.25rem;
   cursor: pointer;
   margin-top: 1rem;
 
   &:hover {
-    background-color: var(--red);
-    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
+    border: 1px solid var(--red);
+    color: var(--dark);
   }
 `;
 

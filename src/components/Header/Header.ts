@@ -280,9 +280,9 @@ export const StyledNavItem = styled(Link)`
 `;
 
 export const DeliveryButton = styled.button`
-  background-color: var(--orange);
+  background-color: var(--red);
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;  
   border: none;
   border-radius: 0.5rem;
   font-size: 1.2rem;
@@ -290,7 +290,8 @@ export const DeliveryButton = styled.button`
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
-    background-color: var(--red);
+    background-color: var(--yellow);
+    color: var(--dark);
   }
 
   @media only screen and (max-width: 480px) {

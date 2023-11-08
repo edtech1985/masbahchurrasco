@@ -1,29 +1,52 @@
-import { WhatsAppButtonCampeche, WhatsAppButtonCarvoeira } from "../../components/Buttons/WhatsAppButton";
-import { ButtonsDiv, Container, ContentDiv, MapDiv, SelectButton, SelectedDiv, Subtitulo, Subtitulo3, Texto, Title, TitleDiv, Titulo, WppDiv } from "./Contacts";
+import {
+  WhatsAppButtonCampeche,
+  WhatsAppButtonCarvoeira,
+} from "../../components/Buttons/WhatsAppButton";
+import {
+  ButtonsDiv,
+  Container,
+  ContentDiv,
+  MapDiv,
+  SelectButton,
+  SelectedDiv,
+  Subtitulo,
+  Subtitulo3,
+  Texto,
+  Title,
+  TitleDiv,
+  Titulo,
+  WppDiv,
+} from "./Contacts";
 
 import { useState } from "react";
 
 export default function Contacts() {
-
   const [showCampeche, setShowCampeche] = useState(true);
   const [showCarvoeira, setShowCarvoeira] = useState(false);
 
   return (
     <Container>
       <TitleDiv>
-      <Title>Sabores em Dobro: Duas Unidades, Uma Experiência Inigualável!</Title>
+        <Title>
+          Sabores em Dobro: Duas Unidades, Uma Experiência Inigualável!
+        </Title>
         <Titulo>Contato e Localização</Titulo>
-        <Subtitulo>Bagual antes de ser Gourmet</Subtitulo>
-        <Subtitulo>Os melhores rangos da cidade</Subtitulo>
       </TitleDiv>
 
       <ButtonsDiv>
-        <SelectButton onClick={() => [setShowCampeche(true), setShowCarvoeira(false)]}>Campeche</SelectButton>
-        <SelectButton onClick={() => [setShowCarvoeira(true), setShowCampeche(false)]}>Carvoeira</SelectButton>
+        <SelectButton
+          onClick={() => [setShowCampeche(true), setShowCarvoeira(false)]}
+        >
+          Campeche
+        </SelectButton>
+        <SelectButton
+          onClick={() => [setShowCarvoeira(true), setShowCampeche(false)]}
+        >
+          Carvoeira
+        </SelectButton>
       </ButtonsDiv>
 
       <ContentDiv>
-
         {showCampeche && (
           <>
             <MapDiv>
@@ -35,20 +58,16 @@ export default function Contacts() {
                 style={{ border: 0 } as any}
                 allowFullScreen={true}
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade">
-              </iframe>
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </MapDiv>
 
             <SelectedDiv>
               <Subtitulo3>Campeche</Subtitulo3>
               <Texto>Segunda à Sábado das 19h às 23h</Texto>
               <Texto>(48) 99133-8844</Texto>
-              <Texto>
-                Rua Sabino Anisio da Silveira, 116 - Campeche
-              </Texto>
-              <Texto>
-                Florianópolis - SC
-              </Texto>
+              <Texto>Rua Sabino Anisio da Silveira, 116 - Campeche</Texto>
+              <Texto>Florianópolis - SC</Texto>
               <WppDiv>
                 <WhatsAppButtonCampeche />
               </WppDiv>
@@ -67,29 +86,23 @@ export default function Contacts() {
                 style={{ border: 0 } as any}
                 allowFullScreen={true}
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade">
-              </iframe>
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </MapDiv>
 
             <SelectedDiv>
               <Subtitulo3>Carvoeira</Subtitulo3>
               <Texto>Segunda à Sábado das 19h às 23h</Texto>
               <Texto>(48) 99833-3303</Texto>
-              <Texto>
-                Rua Capitão Romualdo de Barros, 933 - Carvoeira
-              </Texto>
-              <Texto> Florianópolis - SC
-              </Texto>
+              <Texto>Rua Capitão Romualdo de Barros, 933 - Carvoeira</Texto>
+              <Texto> Florianópolis - SC</Texto>
               <WppDiv>
                 <WhatsAppButtonCarvoeira />
               </WppDiv>
             </SelectedDiv>
-
           </>
         )}
-
       </ContentDiv>
-
-    </Container >
-  )
+    </Container>
+  );
 }

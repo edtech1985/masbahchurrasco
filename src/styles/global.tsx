@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, sans-serif;
   }
 
   body {
@@ -20,12 +20,12 @@ export const GlobalStyle = createGlobalStyle`
     text-align: center;
     
     h1{
-      font-family: var(--title);
+      font-family: var(--base);
       font-size: 36px;
     }
 
     h2{
-      font-family: var(--title);
+      font-family: var(--base);
       font-size: 28px;
     }
 
@@ -50,11 +50,12 @@ export const GlobalStyle = createGlobalStyle`
 
 :root {
   --dark: #080D09;
-  --yellow: #D9B13B;
+  --yellow: #FFFF00;
   --orange: #F28A2E;
-  --red: #F25922;
+  --red: #FF0000;
   --white: #F2F2F2;
   --grey: #A8A8A8;
+  --base: "Montserrat", sans-serif;
   --title: "Allura", cursive;
   --options: "Source Sans 3", sans-serif;
 }

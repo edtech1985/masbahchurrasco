@@ -126,13 +126,15 @@ export const StyleLink = styled.a`
 
 export const ButtonsDiv = styled.div`
   display: flex;
+  gap: 9rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 `;
 
 export const SelectButton = styled.button`
-  background-color: var(--orange);
+  background-color: var(--red);
   color: var(--white);
   border: none;
   border-radius: 5px;
@@ -147,6 +149,7 @@ export const SelectButton = styled.button`
 
 
   &:hover {
-    background-color: var(--red);
+    background-color: var(--yellow);
+    color: var(--dark);
   }
 `;
