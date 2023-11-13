@@ -84,8 +84,7 @@ export const Text = styled.p`
 export const Tabela = styled.table`
   line-height: 1.5rem;
   width: 80vw;
-  text-align: left;
-  padding: 1rem;
+  text-align: left;  
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -140,10 +139,10 @@ export const Bottom = styled.td`
   font-family: var(--options);
   color: var(--white);
   font-size: 1.2rem;
+  padding-bottom: 1rem;
 
   @media screen and (max-width: 768px) {
     text-align: left;
-    padding-bottom: 1rem;
   }
 `;
 
