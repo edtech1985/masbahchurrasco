@@ -49,6 +49,7 @@ export const Button = styled.button`
   padding: 1rem 2rem;
   font-size: 1.25rem;
   text-transform: uppercase;
+
   border: 2px solid var(--red);
   border-radius: 1.25rem;
   cursor: pointer;

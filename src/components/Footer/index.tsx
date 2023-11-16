@@ -50,7 +50,7 @@ export default function Footer() {
             aria-label="Criação de Websites edtech1985"
           >
             <span>
-              <strong>edtech1985 & Karla Dev</strong>
+              <strong>edtech1985 & KarlaDev</strong>
             </span>
           </a>
         </StyledDevelopedBy>
