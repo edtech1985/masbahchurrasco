@@ -1,12 +1,26 @@
 import styled from "styled-components";
 
+import BGImh from "../../assets/img/fundochamas.jpg"
+
+export const ContainerBackgroung = styled.section`
+  width: 100%;
+  max-width: 100vw;
+  min-height: 70vh;
+  background-image: url(${BGImh});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 70vh;
   height: auto; /* Define a altura para ocupar toda a altura da janela */
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
 `;
 
 export const TitleDiv = styled.div`
@@ -36,16 +50,15 @@ export const MapDiv = styled.div`
   height: 40vh;
   width: 45vw;
 
-  
-  @media only screen and (min-width:  1024px) {
+  @media only screen and (min-width: 1024px) {
     justify-content: space-evenly;
     width: 30vw;
   }
 
   @media only screen and (max-width: 768px) {
-   width: 100%;
-   box-sizing: border-box;
-   height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
   }
 `;
 
@@ -60,15 +73,15 @@ export const SelectedDiv = styled.div`
   height: 40vh;
   width: 45vw;
 
-  @media only screen and (min-width:  1024px) {
+  @media only screen and (min-width: 1024px) {
     justify-content: space-evenly;
     width: 30vw;
   }
 
   @media only screen and (max-width: 768px) {
-   width: 100%;
-   box-sizing: border-box;
-   height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
   }
 `;
 
@@ -80,7 +93,6 @@ export const Title = styled.h1`
   font-size: 32px;
   color: var(--red);
   margin-bottom: 10px;
-  
 `;
 
 export const Titulo = styled.h2`
@@ -131,6 +143,9 @@ export const ButtonsDiv = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const SelectButton = styled.button`
@@ -146,7 +161,12 @@ export const SelectButton = styled.button`
   transition: 0.5s;
   width: 20vw;
   min-width: 150px;
-
+  
+    &:active {
+      background-color: var(--yellow);
+      color: var(--dark);
+      transform: translateY(4px);
+    }
 
   &:hover {
     background-color: var(--yellow);

@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark);
-  width: 100%;
+  width: 100vw;
   max-height: 15vh;
   box-sizing: border-box;
   position: relative;
@@ -23,6 +23,11 @@ export const LogoTitleDiv = styled.div`
   width: 100%;
   max-width: 50vw;
   margin-left: 3vw;
+
+  @media only screen and (min-width: 992px) and (max-width: 1135px) {
+    max-width: 40vw;
+    margin-left: 2vw;
+  }
 `;
 
 export const Logo = styled.img`
@@ -213,6 +218,8 @@ export const Menu = styled.ul`
   list-style: none;
   align-items: center;
 
+
+
   @media only screen and (max-width: 992px) {
     flex-direction: column;
   }
@@ -256,6 +263,11 @@ export const MenuItem = styled.li`
     color: var(--red);
   }
 
+  @media only screen and (min-width: 992px) and (max-width: 1135px) {
+    padding: 0.25vw;
+  font-size: 0.9rem;
+  }
+
   @media only screen and (max-width: 992px) {
     display: flex;
   }
@@ -282,7 +294,7 @@ export const StyledNavItem = styled(Link)`
 export const DeliveryButton = styled.button`
   background-color: var(--red);
   color: #fff;
-  padding: 0.6rem 2rem;  
+  padding: 0.6rem 2rem;
   border: none;
   border-radius: 0.5rem;
   font-size: 1.2rem;
@@ -292,6 +304,11 @@ export const DeliveryButton = styled.button`
     transform: scale(1.1);
     background-color: var(--yellow);
     color: var(--dark);
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1135px) {
+    padding: 0.5rem 1.9rem;
+    font-size: 1.1rem;
   }
 
   @media only screen and (max-width: 480px) {
@@ -307,7 +324,12 @@ export const StyledSocialIcons = styled.div`
   width: auto;
   box-sizing: border-box;
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (min-width: 992px) and (max-width: 1135px) {
+    padding-right: 0rem;
+    gap: 0.25vw;
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 992px) {
     padding-right: 3rem;
     gap: 0.5vw;
   }
