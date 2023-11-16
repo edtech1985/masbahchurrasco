@@ -38,7 +38,10 @@ export default function Footer() {
             rel="noopener noreferrer"
             aria-label="Ir para o MasBah! Churrasco"
           >
-            <span>MasBah! Churrasco</span>
+            <span>
+              <strong>MasBah! Churrasco
+              </strong>
+            </span>
           </a>
         </StyledRightsReserved>
         <StyledDevelopedBy>
@@ -50,7 +53,17 @@ export default function Footer() {
             aria-label="Criação de Websites edtech1985"
           >
             <span>
-              <strong>edtech1985 & KarlaDev</strong>
+              <strong>edtech1985 </strong>
+            </span>
+          </a>  &
+          <a
+            href="https://www.edtech1985.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Criação de Websites edtech1985"
+          >
+            <span>
+              <strong> KarlaDev</strong>
             </span>
           </a>
         </StyledDevelopedBy>

@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { StyledIconItem, StyledIconList } from "./StyledSocialIcons";
+import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from "react-tooltip";
 
 export const FacebookIcon = () => {
@@ -38,12 +39,11 @@ export const InstagramIcon = () => {
 
 interface TooltipProps {
   content: string;
-  place: string;
 }
+
 export const WhatsappIcon: React.FC = () => {
   const tooltipProps: TooltipProps = {
     content: "Campeche",
-    place: "top",
   };
   return (
     <StyledIconList>
@@ -53,12 +53,12 @@ export const WhatsappIcon: React.FC = () => {
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp MasBah! Churrasco Campeche"
-          data-tip={tooltipProps.content}
-          data-place={tooltipProps.place}
+          data-tooltip-id={tooltipProps.content}
+          data-tooltip-content={tooltipProps.content}
         >
           <FaWhatsapp />
         </a>
-        <Tooltip />
+        <Tooltip id={tooltipProps.content} />
       </StyledIconItem>
     </StyledIconList>
   );
@@ -67,7 +67,6 @@ export const WhatsappIcon: React.FC = () => {
 export const WhatsappIcon2: React.FC = () => {
   const tooltipProps: TooltipProps = {
     content: "Carvoeira",
-    place: "top",
   };
   return (
     <StyledIconList>
@@ -77,12 +76,16 @@ export const WhatsappIcon2: React.FC = () => {
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp MasBah! Churrasco Carvoeira"
-          data-tip={tooltipProps.content}
-          data-place={tooltipProps.place}
+          data-tooltip-id={tooltipProps.content}
+          data-tooltip-content={tooltipProps.content}
         >
           <FaWhatsapp />
         </a>
-        <Tooltip />
+        <Tooltip id={tooltipProps.content}  style={{
+          fontSize: "15px",
+          backgroundColor: "red",
+          borderRadius: "50px",
+        }}/>
       </StyledIconItem>
     </StyledIconList>
   );
