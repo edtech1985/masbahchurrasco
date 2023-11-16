@@ -49,15 +49,16 @@ export const Button = styled.button`
   padding: 1rem 2rem;
   font-size: 1.25rem;
   text-transform: uppercase;
-  border: 1px solid var(--yellow);
+
+  border: 2px solid var(--red);
   border-radius: 1.25rem;
   cursor: pointer;
   margin-top: 1rem;
 
   &:hover {
-    background-color: var(--yellow);
-    border: 1px solid var(--red);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--red);
+    border: 2px solid var(--red);
   }
 `;
 
