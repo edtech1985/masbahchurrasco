@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { StyledIconItem, StyledIconList } from "./StyledSocialIcons";
-import 'react-tooltip/dist/react-tooltip.css'
+import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 
 export const FacebookIcon = () => {
@@ -58,7 +58,16 @@ export const WhatsappIcon: React.FC = () => {
         >
           <FaWhatsapp />
         </a>
-        <Tooltip id={tooltipProps.content} />
+        <Tooltip
+          id={tooltipProps.content}
+          style={{
+            fontSize: "15px",
+            padding: "4px",
+            backgroundColor: "red",
+            borderRadius: "40px",
+            zIndex: "1000",
+          }}
+        />
       </StyledIconItem>
     </StyledIconList>
   );
@@ -81,11 +90,16 @@ export const WhatsappIcon2: React.FC = () => {
         >
           <FaWhatsapp />
         </a>
-        <Tooltip id={tooltipProps.content}  style={{
-          fontSize: "15px",
-          backgroundColor: "red",
-          borderRadius: "50px",
-        }}/>
+        <Tooltip
+          id={tooltipProps.content}
+          style={{
+            fontSize: "15px",
+            padding: "4px",
+            backgroundColor: "red",
+            borderRadius: "15px",
+            zIndex: "1000",
+          }}
+        />
       </StyledIconItem>
     </StyledIconList>
   );

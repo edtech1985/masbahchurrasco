@@ -64,7 +64,7 @@ export default function Contacts() {
 
               <SelectedDiv>
                 <Subtitulo3>Campeche</Subtitulo3>
-                <Texto>Segunda à Sábado das 19h às 23h</Texto>
+                <Texto>Terça a Domingo, das 19h às 23h</Texto>
                 <Texto>(48) 99133-8844</Texto>
                 <Texto>Rua Sabino Anisio da Silveira, 116 - Campeche</Texto>
                 <Texto>Florianópolis - SC</Texto>
@@ -92,7 +92,7 @@ export default function Contacts() {
 
               <SelectedDiv>
                 <Subtitulo3>Carvoeira</Subtitulo3>
-                <Texto>Segunda à Sábado das 19h às 23h</Texto>
+                <Texto>Terça a Sábado, das 19h às 23h</Texto>
                 <Texto>(48) 99833-3303</Texto>
                 <Texto>Rua Capitão Romualdo de Barros, 933 - Carvoeira</Texto>
                 <Texto> Florianópolis - SC</Texto>

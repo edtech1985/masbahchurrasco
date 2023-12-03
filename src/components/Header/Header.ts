@@ -302,8 +302,7 @@ export const DeliveryButton = styled.button`
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.1);
-    background-color: var(--yellow);
-    color: var(--dark);
+    background-color: var(--redh);
   }
 
   @media only screen and (min-width: 992px) and (max-width: 1135px) {

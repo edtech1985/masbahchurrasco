@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import BGImh from "../../assets/img/fundochamas.jpg"
+import BGImh from "../../assets/img/fundochamas.jpg";
 
 export const ContainerBackgroung = styled.section`
   width: 100%;
@@ -108,8 +108,9 @@ export const Subtitulo = styled.h2`
   margin-bottom: 0.5rem;
 `;
 export const Subtitulo3 = styled.h3`
+  font-family: var(--options);
   font-size: 15px;
-  color: var(--orange);
+  color: var(--red);
   margin-bottom: 0.75rem;
 
   @media only screen and (min-width: 1024px) {
@@ -161,15 +162,13 @@ export const SelectButton = styled.button`
   transition: 0.5s;
   width: 20vw;
   min-width: 150px;
-  
-    &:active {
-      background-color: var(--yellow);
-      color: var(--dark);
-      transform: translateY(4px);
-    }
+
+  &:active {
+    background-color: var(--redh);
+    transform: translateY(4px);
+  }
 
   &:hover {
-    background-color: var(--yellow);
-    color: var(--dark);
+    background-color: var(--redh);
   }
 `;

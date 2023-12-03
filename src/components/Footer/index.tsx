@@ -27,8 +27,9 @@ export default function Footer() {
 
       <StyledDiv>
         <StyledRightsReserved>
-          Horário de Atendimento: <br></br>Segunda-feira à Sábado, das 19h às
-          23h
+          Horário de Atendimento: Terça a Domingo, das 19h às
+          23h<br></br>
+          Domingo somente unidade Campeche
         </StyledRightsReserved>
         <StyledRightsReserved>
           © {currentYear} Direitos Reservados |{" "}
@@ -57,10 +58,10 @@ export default function Footer() {
             </span>
           </a>  &
           <a
-            href="https://www.edtech1985.com.br/"
+            href="https://wa.me/48991663767"
             target="_blank"
             rel="noreferrer"
-            aria-label="Criação de Websites edtech1985"
+            aria-label="Contato Whatsapp"
           >
             <span>
               <strong> KarlaDev</strong>

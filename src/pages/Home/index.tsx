@@ -12,7 +12,7 @@ export default function Home() {
       <MainDiv>
         <Title>Bagual antes de ser Gourmet!</Title>
         <SubTitle>🔥 Os melhores rangos da cidade 🔥</SubTitle>
-        <Paragraph>🔥 Terça a Sábado das 19h às 23h 🔥</Paragraph>
+        <Paragraph>🔥 Terça a Domingo, das 19h às 23h 🔥</Paragraph>
         <Paragraph>🔥 Domingo somente unidade Campeche 🔥</Paragraph>
       </MainDiv>
     </Container>
