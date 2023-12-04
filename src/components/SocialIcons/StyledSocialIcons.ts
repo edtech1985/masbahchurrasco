@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const StyledIconList = styled.ul`
   display: flex;
   margin-top: 1.5rem;
@@ -22,7 +20,7 @@ export const StyledIconItem = styled.li`
   color: var(--red);
   cursor: pointer;
   &:hover {
-    color: var(--yellow);
+    color: var(--redh);
   }
   a {
     text-decoration: none;

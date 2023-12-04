@@ -56,8 +56,7 @@ export const Button = styled.button`
   margin-top: 1rem;
 
   &:hover {
-    background-color: var(--dark);
-    color: var(--red);
+    background-color: var(--redh);
     border: 2px solid var(--red);
   }
 `;

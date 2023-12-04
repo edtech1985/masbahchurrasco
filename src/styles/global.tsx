@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
   --yellow: #FFFF00;
   --orange: #F28A2E;
   --red: #FF0000;
+  --redh: #9e0303;
   --white: #F2F2F2;
   --grey: #A8A8A8;
   --base: "Montserrat", sans-serif;

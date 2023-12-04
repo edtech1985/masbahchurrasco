@@ -52,7 +52,7 @@ export const StyledIconItem = styled.li`
   color: var(--red);
   cursor: pointer;
   &:hover {
-    color: var(--yellow);
+    color: var(--redh);
   }
   a {
     text-decoration: none;
@@ -73,13 +73,13 @@ export const StyledRightsReserved = styled.p`
     text-decoration: none;
     color: var(--red);
     &:hover {
-      color: var(--yellow);
+      color: var(--redh);
     }
   }
   span {
     color: var(--red);
     &:hover {
-      color: var(--yellow);
+      color: var(--redh);
     }
   }
   @media only screen and (max-width: 600px) {
@@ -97,14 +97,14 @@ export const StyledDevelopedBy = styled.p`
     color: var(--red);
 
     &:hover {
-      color: var(--yellow);
+      color: var(--redh);
     }
   }
   span {
     color: var(--red);
 
     &:hover {
-      color: var(--yellow);
+      color: var(--redh);
     }
   }
   @media only screen and (max-width: 600px) {
