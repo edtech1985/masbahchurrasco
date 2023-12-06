@@ -218,8 +218,6 @@ export const Menu = styled.ul`
   list-style: none;
   align-items: center;
 
-
-
   @media only screen and (max-width: 992px) {
     flex-direction: column;
   }
@@ -265,7 +263,7 @@ export const MenuItem = styled.li`
 
   @media only screen and (min-width: 992px) and (max-width: 1135px) {
     padding: 0.25vw;
-  font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   @media only screen and (max-width: 992px) {
@@ -312,6 +310,31 @@ export const DeliveryButton = styled.button`
 
   @media only screen and (max-width: 480px) {
     margin-right: 30%;
+  }
+
+  a {
+    background-color: var(--red);
+    text-decoration: none;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      background-color: var(--redh);
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1135px) {
+      padding: 0.5rem 1.9rem;
+      font-size: 1.1rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+      margin-right: 30%;
+    }
   }
 `;
 
