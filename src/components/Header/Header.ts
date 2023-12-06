@@ -316,7 +316,6 @@ export const DeliveryButton = styled.button`
     background-color: var(--red);
     text-decoration: none;
     color: #fff;
-    padding: 0.6rem 2rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 1.2rem;
@@ -328,12 +327,7 @@ export const DeliveryButton = styled.button`
     }
 
     @media only screen and (min-width: 992px) and (max-width: 1135px) {
-      padding: 0.5rem 1.9rem;
       font-size: 1.1rem;
-    }
-
-    @media only screen and (max-width: 480px) {
-      margin-right: 30%;
     }
   }
 `;
